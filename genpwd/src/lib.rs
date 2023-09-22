@@ -50,8 +50,6 @@ pub fn gen(
         candidates.push(special_chars[index])
     }
 
-    println!("all: {:?}", all_chars);
-
     all_chars.shuffle(&mut rng);
 
     let mut current_len = candidates.len();
